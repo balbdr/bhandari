@@ -1,0 +1,191 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("image/tushar.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*formbox start*/
+.formbox{
+    width: 70%;
+    min-height: 70vh;
+    background-color: aliceblue;
+    margin-left: 15%;
+    top: 15vh;
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+   border-radius: 10px;
+   display:none;
+}
+.formbox i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 4%;
+    background: green;
+}
+
+.link{
+    flex: 2;
+    text-align: center;
+
+}
+.link ul li{
+    list-style:none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+.link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.link ul li ::after{
+    contain:0 ;
+    width: 0;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.link ul li:hover::before{
+    width: 100%;
+}
+.textbox{
+    width: 50%;
+    position: absolute;
+    color: red;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/* text bhandari tushara ko text size */
+.textbox h1{
+    font-size: 40px;
+    color:white;
+}
+.textbox p{
+    font-size: 20px;
+    color:red;
+}
+/*
+.register-button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 12px 34px 5px 34px;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.register-button:hover{
+    border: 2px solid red;
+    background: red;
+    transition: 2s;
+
+    
+}*/
+nav i.fa{
+    display:none;
+}
+@media(max-width:700px){
+    .textbox h1{
+        font-size: 25px;
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+    
+    }
+    .link ul li{
+        display:block;
+    }
+    .link{
+        background :red;
+        position:fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav i.fa{
+        display:block;
+        font-size: 20px;
+        cursor: pointer;
+        color:white;
+        margin: 10px;
+        text-align: left;
+    }
+}
+
+
+/*feature section start*/
+
+.feat{
+    text-align: center;
+}
+
+.branch-col img{
+    height: 500px;
+    height: 400px;
+    display: flex;
+    
+
+}
+
+.row{
+    display: flex;
+    padding: 5%;
+    
+}
+.aboutus{
+    padding: 5%;
+}
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+        display: flex;
+        font-size: 15px;
+    padding: 5%;
+    }
+.aboutus{
+    font-size: 15px;
+    padding: 5%;
+}
+} 
+/* About us section starts*/
+.aboutus{
+    
+   
+}
+
+/*form*/
+.form{
+    font-size: 15px;
+    padding: 20%;
+
+}
