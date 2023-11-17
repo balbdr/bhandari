@@ -272,24 +272,24 @@
 <section class="form">
   <h2>प्रतिक्रिया :- </h2>
   <br><br>
-  
+  <form onsubmit="return(validate())";>
+      <textarea name="comments" cols="40" rows="4"placeholder="सल्लाह र सुझाब ...." id="c"></textarea><br>
+      नाम र थर :<input type="text"name="" id="n"><br><br>
+      ठेगाना:<input type="text" name="" id="c"><br><br>
+      प्रदेश <select name="predesh"><br>
+        <option>कोशी  प्रदेश </option>
+        <option>मदेश  प्रदेश </option>
+        <option>बागमती  प्रदेश </option>
+        <option>गण्डकी प्रदेश </option>
+        <option>लुम्बिनी  प्रदेश </option>
+        <option>कर्णाली प्रदेश  </option>
+        <option>सुदुरपश्चिम  प्रदेश </option>
+        <br><br>
+      
+        <input type="submit" value="submit"><br><br>
     
     
-      <textarea name="comments" cols="40" rows="4"placeholder="सल्लाह र सुझाब ...."></textarea><br>
-    <br>
-  
-    नाम र थर : <input type="text" name="name"placeholder="............" required><br><br>
-    ठेगाना :<textarea name="address"></textarea><br><br>
-    प्रदेश <select name="predesh">
-      <option>कोशी  प्रदेश </option>
-      <option>मदेश  प्रदेश </option>
-      <option>बागमती  प्रदेश </option>
-      <option>गण्डकी प्रदेश </option>
-      <option>लुम्बिनी  प्रदेश </option>
-      <option>कर्णाली प्रदेश  </option>
-      <option>सुदुरपश्चिम  प्रदेश </option>
-    </select><br><br>
-    <input type="button" name="button" value="Submit"><br><br>
+     
     <input type="reset" name=" reset"><br><br><br>
     <button type="button" onclick="document.getElementById('display').innerHTML = Date()">मिति र समय </button>
     <p id="display"></p> 
