@@ -14,4 +14,4 @@ else{
     return true;
 }
 }
-document.write validate();
+ validate();
