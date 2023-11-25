@@ -110,7 +110,8 @@ nav i.fa{
     display:none;
 }
 .photos{
-    background color="pink"
+    overflow: hidden;
+    background-color: aquamrine
 }
 @media(max-width:700px){
     .textbox h1{
