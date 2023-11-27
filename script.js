@@ -10,7 +10,7 @@ function validate(){
         return false;
 }
 else{
-    document.write("केही प्राबधिक कारणले गर्दा यो फारम अहिले  पेशहुन सकेन  (This form could not be submitted at present due to some technical reasons. )");
+    document.write("केही प्राबधिक कारणले गर्दा यो फारम अहिले  पेशहुन सकेन ");
     return true;
 }
 }
