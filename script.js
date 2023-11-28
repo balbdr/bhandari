@@ -10,7 +10,7 @@ function validate(){
         return false;
 }
 else{
-    console.log("प्राबिधिक कारणले यो फारम पेश हुनसकेन ।")
+   document.write ("प्राबिधिक कारणले यो फारम पेश हुनसकेन ।")
 return true;
 
 }
