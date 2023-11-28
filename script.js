@@ -10,7 +10,8 @@ function validate(){
         return false;
 }
 else{
-   document.write ("प्राबिधिक कारणले यो फारम पेश हुनसकेन ।")
+   document.write (" यो फारम अहिले  पेश हुन सकेन ।
+             ( This form could not be submitted now  )")
 return true;
 
 }
