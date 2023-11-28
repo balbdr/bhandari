@@ -12,6 +12,7 @@ function validate(){
 else{
     console.log()
 return true;
+    success.style.display ="block";
 }
 }
  validate();
