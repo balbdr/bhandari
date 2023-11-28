@@ -11,7 +11,7 @@ function validate(){
 }
 else{
     document.write("केही प्राबधिक कारणले गर्दा यो फारम अहिले  पेशहुन सकेन ");
-    return true;
+
 }
 }
  validate();
