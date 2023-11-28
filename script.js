@@ -12,7 +12,7 @@ function validate(){
 else{
     console.log("प्राबिधिक कारणले यो फारम पेश हुनसकेन ।")
 return true;
-    success.style.display ="block";
+
 }
 }
  validate();
