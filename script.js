@@ -10,8 +10,8 @@ function validate(){
         return false;
 }
 else{
-    document.write("केही प्राबधिक कारणले गर्दा यो फारम अहिले  पेशहुन सकेन ");
-
+    document.write()
+return true;
 }
 }
  validate();
