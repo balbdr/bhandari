@@ -1,18 +1,18 @@
 function validate(){
     let comments=document.getElementById('c');
     let name=document.getElementById('n');
-    if(comments==""){
+if(comments==""){
         alert("comments");
         return false;
     }
-    if(name==""){
+if(name==""){
         alert("name");
         return false;
 }
 else{
    document.write (" यो फारम अहिले  पेश हुन सकेन ।
              ( This form could not be submitted now  )")
-return true;
+        return true;
 
 }
 }
