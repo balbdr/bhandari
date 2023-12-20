@@ -193,7 +193,7 @@ nav i.fa{
     padding: 20%;
 
 }
- body{
+ .clock{
       background: blue;
       height: 100vh;
       display: flex;
