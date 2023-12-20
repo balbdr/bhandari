@@ -193,3 +193,21 @@ nav i.fa{
     padding: 20%;
 
 }
+ body{
+      background: blue;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .clock{
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">00:00:00</div>
