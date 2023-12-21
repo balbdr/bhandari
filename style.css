@@ -193,6 +193,7 @@ nav i.fa{
     padding: 20%;
 
 }
+@media(max-width:700px){
  .clock{
       background: blue;
       height: 50vh;
@@ -211,3 +212,4 @@ nav i.fa{
 </head>
 <body>
   <div class="clock">00:00:00</div>
+}
