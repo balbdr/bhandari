@@ -196,10 +196,11 @@ nav i.fa{
 
  .clock{
       background: blue;
+      width: 50%;
       height: 50vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: left;
     }
     .clock{
       color: #fff;
