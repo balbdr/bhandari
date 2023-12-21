@@ -193,9 +193,9 @@ nav i.fa{
     padding: 20%;
 
 }
- body{
+ .clock{
       background: blue;
-      height: 100vh;
+      height: 50vh;
       display: flex;
       justify-content: center;
       align-items: center;
