@@ -113,6 +113,9 @@ nav i.fa{
     overflow: hidden;
     background-color: aquamrine
 }
+.page{
+    text-align: left;
+}
 @media(max-width:700px){
     .textbox h1{
         font-size: 25px;
