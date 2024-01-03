@@ -161,7 +161,9 @@ nav i.fa{
     height: 400px;
     display: flex;
     
-
+.name{
+   display: flex;
+    padding: 5%;  
 }
 
 .row{
