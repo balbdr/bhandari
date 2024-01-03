@@ -161,16 +161,17 @@ nav i.fa{
     height: 400px;
     display: flex;
     
-.name{
-   display: flex;
-    padding: 5%;  
-}
+
 
 .row{
     display: flex;
     padding: 5%;
     
 }
+   .name{
+   
+    padding: 5%;  
+} 
 .aboutus{
     padding: 5%;
 }
