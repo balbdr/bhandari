@@ -124,7 +124,7 @@ nav i.fa{
         font-size: 25px;
         background-position: center;
         background-size: cover;
-        position: relative;
+        position: fixed;
     
     }
     .link ul li{
@@ -183,7 +183,7 @@ nav i.fa{
     padding: 5%;
          background-position: center;
         background-size: cover;
-        position: fixe 
+        position: fixed;
     }
 .aboutus{
     font-size: 15px;
