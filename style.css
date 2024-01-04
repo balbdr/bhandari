@@ -181,6 +181,9 @@ nav i.fa{
         display: flex;
         font-size: 15px;
     padding: 5%;
+         background-position: center;
+        background-size: cover;
+        position: fixe 
     }
 .aboutus{
     font-size: 15px;
