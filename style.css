@@ -124,7 +124,7 @@ nav i.fa{
         font-size: 25px;
         background-position: center;
         background-size: cover;
-        position: fixed;
+        position: relative;
     
     }
     .link ul li{
