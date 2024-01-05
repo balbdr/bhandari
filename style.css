@@ -119,6 +119,25 @@ nav i.fa{
     overflow: hidden;
     background-color: aquamrine
 }
+ .clock{
+      background: blue;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+ 
+    .clock{
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      font-weight: bold;
+    }
+  
+  <div class="clock">00:00:00</div>
+
 .page{
     text-align: center;
 }
@@ -208,24 +227,7 @@ nav i.fa{
     padding: 20%;
 
 }
- .clock{
-      background: blue;
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-   
- 
-    .clock{
-      color: #fff;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2rem;
-      letter-spacing: 0.5rem;
-      font-weight: bold;
-    }
-  
-  <div class="clock">00:00:00</div>
+
 @media(max-width:700px){
      
     .clock{
