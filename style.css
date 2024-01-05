@@ -90,6 +90,9 @@ nav{
 .about{
     padding:5%;
 }
+.about p{
+    padding:5%;
+}
 /*
 .register-button{
     display: inline-block;
