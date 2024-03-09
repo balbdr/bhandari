@@ -11,10 +11,29 @@
     background-position: center;
     background-size: cover;
     position: relative;
-}
+    .clock{
+     /* background: blue;*/
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+ 
+    .clock{
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      font-weight: bold;
+    }
+  
+  <div class="clock">00:00:00</div>
+
+}/*
 .watchh {
     width: 15%;
-   /* background-color: rgba(255, 255, 255, 0.904); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0.904); /* Transparent background 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +45,7 @@
   .watchh {
     font-size: 2em;
     color: red;
-   /* background-color: rgba(17, 16, 17, 0.5); /* Transparent background */
+    background-color: rgba(17, 16, 17, 0.5); /* Transparent background 
     padding: 20px;
     border-radius: 5px;
      margin-left: 10%;  
@@ -137,6 +156,7 @@ nav i.fa{
     overflow: hidden;
     background-color: aquamrine
 }
+    /*
  .clock{
       background: blue;
       height: 50vh;
@@ -154,7 +174,7 @@ nav i.fa{
       font-weight: bold;
     }
   
-  <div class="clock">00:00:00</div>
+  <div class="clock">00:00:00</div>*/
 
 .page{
     text-align: center;
