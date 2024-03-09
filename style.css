@@ -19,16 +19,18 @@
       align-items: center;
          margin: 10px;
      margin-left: 10%;
+        
     }
    
  
     .clock{
       color: red;
       font-family: 'Orbitron', sans-serif;
-      font-size: 1rem;
+      font-size: 2rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
-       margin-left: 10%;  
+       margin-left: 10%; 
+        padding: 5px 5px;
     }
   
   <div class="clock">00:00:00</div>
