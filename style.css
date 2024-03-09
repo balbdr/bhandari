@@ -20,6 +20,7 @@
     align-items: center;
     height: 5vh;
     margin: 10px;
+     margin-left: 15%;
   }
   
   .watchh {
@@ -28,6 +29,7 @@
    /* background-color: rgba(17, 16, 17, 0.5); /* Transparent background */
     padding: 20px;
     border-radius: 5px;
+     margin-left: 15%;  
   }
 /*formbox start*/
 .formbox{
