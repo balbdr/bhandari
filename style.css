@@ -12,7 +12,23 @@
     background-size: cover;
     position: relative;
 }
-
+.watchh {
+    width: 5%;
+   /* background-color: rgba(255, 255, 255, 0.904); /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 0;
+  }
+  
+  .watchh {
+    font-size: 2em;
+    color: #e9e7ee;
+   /* background-color: rgba(17, 16, 17, 0.5); /* Transparent background */
+    padding: 1px;
+    border-radius: 5px;
+  }
 /*formbox start*/
 .formbox{
     width: 70%;
