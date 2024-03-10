@@ -182,18 +182,18 @@ nav i.fa{
   <div class="clock">00:00:00</div>*/
     }
 .watchh {
-    width: 15%;
-    background-color: rgba(255, 255, 255, 0.904);  Transparent background 
+    width: 50%;
+    background-color: blue;  Transparent background 
     display: flex;
     justify-content: left;
     align-items: left;
-    height: 5vh;
+    height: 50vh;
     margin: 10px;
      margin-left: 10%;
   }
   
   .watchh {
-    font-size: 2em;
+    font-size: 4em;
     color: red;
     background-color: rgba(17, 16, 17, 0.5);  Transparent background 
     padding: 20px;
