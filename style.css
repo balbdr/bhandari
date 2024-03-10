@@ -180,6 +180,26 @@ nav i.fa{
     }
   
   <div class="clock">00:00:00</div>*/
+    }
+.watchh {
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.904);  Transparent background 
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 5vh;
+    margin: 10px;
+     margin-left: 10%;
+  }
+  
+  .watchh {
+    font-size: 2em;
+    color: red;
+    background-color: rgba(17, 16, 17, 0.5);  Transparent background 
+    padding: 20px;
+    border-radius: 5px;
+     margin-left: 10%;  
+  }
 
 .page{
     text-align: center;
