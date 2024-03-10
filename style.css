@@ -187,16 +187,16 @@ nav i.fa{
     display: flex;
     justify-content: left;
     align-items: left;
-    height: 50vh;
+    height: 100vh;
     margin: 10px;
      margin-left: 10%;
   }
   
   .watchh {
-    font-size: 4em;
+    font-size: 4rem;
     color: red;
-    background-color: rgba(17, 16, 17, 0.5);  Transparent background 
-    padding: 20px;
+    color: white;  Transparent background 
+    padding: 10px;
     border-radius: 5px;
      margin-left: 10%;  
   }
