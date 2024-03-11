@@ -665,15 +665,15 @@
     </section> 
       
 <!---feedback starts-->
-<section class="form">
-  
+<section class="form"  >
+   
   <h2>प्रतिक्रिया :- </h2>
   <br><br>
   <form onsubmit="return(validate())";>
       <textarea name="comments" cols="20" rows="4"placeholder="सल्लाह र सुझाब ...." id="c"></textarea><br>
-      नाम र थर :<input type="text"name="" placeholder= 'बल बहादुर भण्डारी'id="n">
+      नाम र थर :<input type="text"name="" id="n"><br>
       ठेगाना:<input type="text" name="" id="c"><br>
-       
+      
       प्रदेश <select name="predesh"><br>
         <option>कोशी  प्रदेश </option>
         <option>मदेश  प्रदेश </option>
@@ -681,18 +681,22 @@
         <option>गण्डकी प्रदेश </option>
         <option>लुम्बिनी  प्रदेश </option>
         <option>कर्णाली प्रदेश  </option>
-        <option>सुदुरपश्चिम  प्रदेश </option><br>
-        
-          <input type="phone" placeholder="फोन ..... "><br>
-      <input type="email" placeholder="Email....>
+        <option>सुदुरपश्चिम  प्रदेश </option>
+        <br><br>
+        <input type="phone" placeholder="फोन ..... "><br>
+        <input type="email" placeholder="email ..... "><br>
+        <button type="submit" value="submit">submit </button>   
+     <button type="reset" name=" reset">reset</button>
+          
     
-          <button type="submit" name=" submit">submit</button><br>     
-    <button type="reset" name=" reset">reset</button><br>
-  <!-- <button type="button" onclick="document.getElementById('display').innerHTML = Date()">मिति र समय </button>
-    <p id="display"></p>-->
+      <button type="button" onclick="document.getElementById('display').innerHTML = Date()">मिति र समय </button>
+    <p id="display"></p> <br><br>
+ 
+ 
     
   </form>
     
+        
     
   <script>
     var navlink =document.getElementById("navlink");
