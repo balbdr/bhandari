@@ -799,12 +799,12 @@ return true;
     <script>
         function sendEmail(){
         Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
-       From : "you@isp.com",
-        Subject : "This is the subject",
+        Host : "smtp.yahoo.com",
+        Username : "balbahadur_bhandari@yahoo.com",
+        Password : "upalakot987654321",
+        To : balbahadur361@gmail.com',
+       From : document.getElementById("email").value,
+        Subject : "New Contact From Enquiry",
           Body : "And this is the body"
        }).then(
        message => alert(message)
