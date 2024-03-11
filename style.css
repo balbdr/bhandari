@@ -78,7 +78,7 @@ form textarea{
     padding: 20px;
     outline: none;
     background: #fff;
-    font-size: 6px;
+    font-size: 20px;
   }
   .input{
     border: 0;
@@ -86,7 +86,7 @@ form textarea{
     padding: 20px;
     outline: none;
     background: #fff;
-    font-size: 16px;
+    font-size: 20px;
   }
    form button{
     padding: 15px;
