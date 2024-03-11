@@ -36,6 +36,7 @@
   <div class="clock">00:00:00</div>
 
 }/*
+    
 .watchh {
     width: 15%;
     background-color: rgba(255, 255, 255, 0.904); /* Transparent background 
@@ -56,6 +57,49 @@
      margin-left: 10%;  
   }
 /*formbox start*/
+     form{
+    background-color: #eef4f5;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  form h2{
+    margin: 20px;
+    padding: 20%;
+  }
+  
+
+   .textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 6px;
+  }
+  .input{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 6px;
+  }
+   form button{
+    padding: 15px;
+    background-color: rgb(255, 0, 55);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
 .formbox{
     width: 70%;
     min-height: 70vh;
@@ -68,6 +112,8 @@
    border-radius: 10px;
    display:none;
 }
+
+    
 .formbox i{
     padding: 10px;
     font-size: 20px;
