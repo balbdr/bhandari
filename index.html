@@ -669,7 +669,7 @@
    
   <h2>प्रतिक्रिया :- </h2>
   <br>
-  <form onsubmit="return(validate())";>
+  <form onsubmit="sendEmail(); reset(); return false;">
       <textarea name="comments" cols="20" rows="4" placeholder="सल्लाह र सुझाब ...." id="c"></textarea><br>
       नाम र थर :<input type="text"name="" id="n"placeholder="बल बहादुर भण्डारी" ><br>
       ठेगाना:<input type="text" name="" id="c"><br>
@@ -795,6 +795,21 @@ return true;
   
   setInterval(updateTime, 1000); // Update time every secon
      </script>  -->
+    <scricpt src=" https://smtpjs.com/v3/smtp.js"></scricpt>
+    <script>
+        function sendEmail(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+       From : "you@isp.com",
+        Subject : "This is the subject",
+          Body : "And this is the body"
+       }).then(
+       message => alert(message)
+        );
+    </script>
 </body>
 </html>
 
