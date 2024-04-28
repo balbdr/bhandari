@@ -57,7 +57,10 @@
      margin-left: 10%;  
   }
 /*formbox start*/
-    
+    interest{
+    margin: 20px;
+    padding: 20%;
+            }
      interest{
        background-color: #eef4f5;
     display: flex;
