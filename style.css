@@ -57,7 +57,17 @@
      margin-left: 10%;  
   }
 /*formbox start*/
-     form{
+    
+     interest{
+       background-color: #eef4f5;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 4vw;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;  
+     }
+    
     background-color: #eef4f5;
     display: flex;
     flex-direction: column;
