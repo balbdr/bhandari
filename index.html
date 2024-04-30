@@ -643,29 +643,20 @@
      <h2> --विविध </h2><h5 style="color:purple;" >(मैले यस  Application लाई  scripting programming language मा चक्रवृद्धि ब्याज (Compound interest)को सुत्र (Formula) A=P*(1+r/n)<sup>rt</sup>  प्रयोग गरि  बनाएको हो ) <!-- गरेको हुनाले कसैले यो भन्दा अन्य सुत्र  प्रयोग गरि ब्याज दर  गणना गर्दा ब्याज दर  फरक आउन सक्छ--></h5>
       <br><br>
         <h3><h4>चक्रवृद्धि ब्याज गणना  (Compound Interest Calculator):-</h4></h3><br><br>
-        <div>
-            <label for="principal"><h5>मूलधन (Principal Amount)</>:-</label>
-            <input type="number" id="principal" step="0.01" placeholder="मूलधन रु...."> <br><br>
-        </div>
-        <div>
-            <label for="rate"><h5>वार्षिक ब्याज दर  (Annual Interest Rate):- </h5> -</label>
-            <input type="number" id="rate" step="0.01" placeholder="वार्षिक ब्याज दर %...."> <br><br>
-        </div>
-        <div>
-            <label for="years"><h5>समय (वर्षमा) (Number of Years):-</h5>-</label>
-            <input type="number" id="years" placeholder="समय वर्ष....">  <br><br>
-        </div>
-        <div>
-            <label for="compounding"><h5>चक्रिय वृद्धि(Compounding Frequency):-</h5></label>
-            <select id="compounding">
-                <option value="yearly">बार्षिक</option>
-               <option value="monthly">मासिक</option>
-                <option value="daily">दैनिक</option>
-            </select>
-        </div><br><br>
-        <button onclick="-calculate()">Calculate</button>
-        <div id="result"></div>
+       
+     <label for="principal">मूलधन(Principal) (initial amount):</label>
+    <input type="number" id="principal" placeholder="Enter principal amount"><br>
     
+    <label for="rate">वार्षिक ब्याज दर  (Annual Interest Rate) (in %):</label>
+    <input type="number" id="rate" placeholder="Enter annual interest rate"><br>
+    
+    <label for="time"> समय (वर्षमा)(Time (in years)):</label>
+    <input type="number" id="time" placeholder="Enter time in years"><br>
+    
+    <button onclick="calculateYearly()">बार्षिक(Calculate Yearly)</button>
+    <button onclick="calculateMonthly()">मासिक (Calculate Monthly)</button><br><br>
+
+    <div id="result"></div>
         </interest>
 </section> 
 <br><br>
@@ -835,35 +826,44 @@ return true;
        message => alert(message)
         );
     </script>-->
-    <script>
-  function calculate() {
-      const principal = parseFloat(document.getElementById("principal").value);
-      const rate = parseFloat(document.getElementById("rate").value) / 100;
-      const years = parseInt(document.getElementById("years").value);
-      const compounding = document.getElementById("compounding").value;
-     
-  let n; // Number of compounding periods per year
-  if (compounding === "yearly") {
-      n = 1;
-  }
-  else if (compounding === "monthly") {
-      n = 12;
-  }
-  else {
-      n = 365;
-  }
+    
+<script>
+        function calculateYearly() {
+            var principal = parseFloat(document.getElementById('principal').value);
+            var rate = parseFloat(document.getElementById('rate').value) / 100;
+            var time = parseFloat(document.getElementById('time').value);
 
-  const t = years; // Total number of years
-  const r = rate / n; // Periodic interest rate
+            var amount = principal * Math.pow(1 + rate, time);
+            var interest = amount - principal;
 
-  const A = principal * Math.pow(1 + r, n * t); // Future value (including interest)
-  const interest = A - principal;
+            document.getElementById('result').innerHTML = `
+                ${time}  बर्षमा ,  ${rate * 100}%, 
+                बार्षिक ब्याज को दरले , जम्मा रकम(Total Amount) = रु${amount.toFixed(2)}, 
+                र ब्याज(Interest)= रु ${interest.toFixed(2)}.
+                
+                
+            `;
+        }
 
-  document.getElementById("result").innerHTML = `
-  जम्मा रकम (Total Amount): रु${A.toFixed(2)}<br>
-    ब्याज (Interest Earned): रु${interest.toFixed(2)}
-  `;
-}
+        function calculateMonthly() {
+            var principal = parseFloat(document.getElementById('principal').value);
+            var rate = parseFloat(document.getElementById('rate').value) / 100;
+            var time = parseFloat(document.getElementById('time').value);
+            var months = time * 12;
+
+            var monthlyRate = rate / 12;
+            var amount = principal * Math.pow(1 + monthlyRate, months);
+            var interest = amount - principal;
+
+            document.getElementById('result').innerHTML = `
+                 ${months}महिनामा   (${time} years), मासिक  ${monthlyRate * 100}%,
+                 ब्याज को दरले  , जम्मा रकम(Total Amount)= रु${amount.toFixed(2)}, 
+                 र ब्याज(Interest)= रु${interest.toFixed(2)}.
+            `;
+        }
+  
+
+ 
 </script> 
 </body>
 </html>
