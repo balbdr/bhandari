@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>वर्गमिटर लाई वर्गफिट बदल्न(Area Converter ):-</title>
+</head>
+<body>
+  <h4>वर्गमिटर लाई वर्गफिट बदल्न(Area Converter ):-</h4>
+           <h4>र</h4>
+  <h4>वर्गफिट लाई वर्गमिटर बदल्न(Area Converter ):-</h4>
+  <label for="sqft">वर्गफिट(Square Feet):</label>
+  <input type="number" id="sqft" oninput="convertSqftToSqMeter()">
+  <p id="resultSqft"></p>
+
+  <label for="sqmeter">वर्गमिटर(Square Meters):</label>
+  <input type="number" id="sqmeter" oninput="convertSqMeterToSqft()">
+  <p id="resultSqMeter"></p>
+
+  <script>
+    function convertSqftToSqMeter() {
+      var sqft = document.getElementById('sqft').value;
+      var sqmeter = sqft * 0.092903; // 1 square foot = 0.092903 square meters
+      document.getElementById('resultSqft').textContent = sqft + ' वर्गफिट(square feet) = ' + sqmeter.toFixed(2) + 'वर्गमिटर square meters.';
+    }
+
+    function convertSqMeterToSqft() {
+      var sqmeter = document.getElementById('sqmeter').value;
+      var sqft = sqmeter / 0.092903; // 1 square meter = 10.7639 square feet
+      document.getElementById('resultSqft').textContent = sqft + ' वर्गफिट(square feet) = ' + sqmeter.toFixed(2) + 'वर्गमिटर square meters.';
+      
+      document.getElementById('resultSqMeter').textContent = sqmeter + ' वर्गमिटर(square meters ) =' + sqft.toFixed(2) + ' square feet.';
+    }
+  </script>
+</body>
+</html>
