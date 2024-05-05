@@ -908,6 +908,28 @@ return true;
 
  
 </script> 
+  
+<script>
+  function calculateArea() {
+      var a = parseFloat(document.getElementById("sideA").value);
+      var b = parseFloat(document.getElementById("sideB").value);
+      var c = parseFloat(document.getElementById("sideC").value);
+
+      var s = (a + b + c) / 2;
+      var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+      if (!isNaN(area)) {
+          document.getElementById("result").innerHTML = "त्रिभुजको क्षेत्रफल= Area of the triangle is: " + area.toFixed(2);
+      } else {
+          document.getElementById("result").innerHTML = "मिलेनInvalid input. रेखा को सही लम्बाई लेख्नुहोस Please enter valid side lengths.";
+      }
+  }
+</script>
+</body>
+</html>
+
+</body>
+</html>  
 </body>
 </html>
 
