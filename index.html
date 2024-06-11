@@ -734,12 +734,12 @@
     <title>वर्गमिटरलाई बिगाहा-कट्ठा-धुरमा बदल्न :-</title>
 </head>
 <body>
-    <!--
+    
 
 <h4>वर्गमिटरलाई बिगाहा-कट्ठा-धुरमा बदल्न :-</h4>
 
-<label for="squareMeter">वर्गमिटर याँहा लेख्ने:</label>
-<input type="number" id="squareMeter" oninput="convertSquareMeter()" placeholder="Enter Square Meter:"><br><br>
+<label for="meterSquare">वर्गमिटर याँहा लेख्ने:</label>
+<input type="number" id="meterSquare" oninput="convertSquareMeter()" placeholder="Enter Square Meter:"><br><br>
 
 <table border="1">
     <tr>
@@ -750,14 +750,14 @@
         
     </tr>
     <tr>
-        <td id="sqm"></td>
+        <td id="sqmt"></td>
         <td id="bigha"></td>
         <td id="kattha"></td>
         <td id="dhur"></td>
         
     </tr>
 </table>
- </section>-->
+ </section
 
 <!-- <a href="https://github.com/balbdr/bhandari/tree/main/area%20ropani"target="_blank">वर्गमिटरलाई रोपनी-आना -पैसा -दाममा बदल्न याँहा थिच्नुहोस </a><br><br>
  <a href="file:///C:/Users/Hp/OneDrive/Desktop/all/bigha/bigha.html">वर्गमिटर लाई बिगाहा -कट्ठा -धुरमा  बदल्न याँहा थिच्नुहोस </a><br><br>
@@ -996,22 +996,22 @@ return true;
         document.getElementById('daam').innerText = Math.floor(daam);
     }
 </script>
-<!--    
+   
 <script>
     function convertSquareMeter() {
-        var squareMeter = parseFloat(document.getElementById('squareMeter').value);
+        var squareMeter = parseFloat(document.getElementById('meterSquare').value);
         var bigha = squareMeter / 6772.63; // 1 bigha = 6772.63 sqm
         var kattha = (bigha - Math.floor(bigha)) * 20;
         var dhur =  (kattha - Math.floor(kattha)) * 20;
     
 
-        document.getElementById('sqm').innerText = squareMeter.toFixed(2);
+        document.getElementById('sqmt').innerText = meterSquare.toFixed(2);
         document.getElementById('bigha').innerText = Math.floor(bigha);
         document.getElementById('kattha').innerText = Math.floor(kattha);
         document.getElementById('dhur').innerText = Math.floor(dhur);
         
     }
-</script>-->
+</script>
 </body>
 </html>
 </body>
