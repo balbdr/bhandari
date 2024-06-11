@@ -738,7 +738,7 @@
 <h4>वर्गमिटरलाई बिगाहा-कट्ठा-धुरमा बदल्न :-</h4>
 
 <label for="squareMeter">वर्गमिटर याँहा लेख्ने:</label>
-<input type="number" id="squareMeters" oninput="convertSquareMeter()" placeholder="Enter Square Meter:"><br><br>
+<input type="number" id="squareMeter" oninput="convertSquareMeter()" placeholder="Enter Square Meter:"><br><br>
 
 <table border="1">
     <tr>
@@ -998,13 +998,13 @@ return true;
     
 <script>
     function convertSquareMeter() {
-        var squareMeter = parseFloat(document.getElementById('squareMeters').value);
+        var squareMeter = parseFloat(document.getElementById('squareMeter').value);
         var bigha = squareMeter / 6772.63; // 1 bigha = 6772.63 sqm
         var kattha = (bigha - Math.floor(bigha)) * 20;
         var dhur =  (kattha - Math.floor(kattha)) * 20;
     
 
-        document.getElementById('sqm').innerText = squareMeters.toFixed(2);
+        document.getElementById('sqm').innerText = squareMeter.toFixed(2);
         document.getElementById('bigha').innerText = Math.floor(bigha);
         document.getElementById('kattha').innerText = Math.floor(kattha);
         document.getElementById('dhur').innerText = Math.floor(dhur);
