@@ -763,8 +763,8 @@
 </table>
  </section
     <br><br>
-    <!--
-    <section>
+    
+    <section class="convert">
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -782,7 +782,7 @@
 
   <label for="sqmeter">वर्गमिटर(Square Meters):</label>
   <input type="number" id="sqmeter" oninput="convertSqMeterToSqft()">
-  <p id="resultSqMeter"></p>-->
+  <p id="resultSqMeter"></p>
 
     </section>
 
@@ -1039,7 +1039,7 @@ return true;
         
     }
 </script>
-    <!--
+    
     <script>
        
     function convertSqftToSqMeter() {
@@ -1052,7 +1052,7 @@ return true;
       var sqmeter = document.getElementById('sqmeter').value;
       var sqft = sqmeter / 0.092903; // 1 square meter = 10.7639 square feet
       document.getElementById('resultSqMeter').textContent = sqmeter + ' वर्गमिटर(Square meters) =' + sqft.toFixed(2) + ' वर्गफिट(Square feet)';
-    }-->
+    }
   </script> 
     </script>
 </body>
