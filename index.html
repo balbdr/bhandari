@@ -847,9 +847,9 @@
     
      <form class="input">
          
-    <input type="text" placeholder="name">
-    <button>submit</button>
-    <ul>
+    <input type="text" placeholder="name" id="inp">
+    <button id="btn">submit</button>
+    <ul id="list">
         
     </ul>
          
@@ -1073,17 +1073,19 @@ return true;
     }-->
 
 
-let btn= document.querySelector("button");
-let input = document.querySelector("input");
-let list = document.querySelector("ul");
+
+
+       
+  </script> 
+     let btn= document.getElementById("btn");
+let input = document.getElementById("inp");
+let list = document..getElementById("list");
 
 btn.addEventListener("click",function(){
     let inputValue = input.value;
     list.insertAdjacentHTML("beforeend", `<li>${inputValue}</li>`);
 });
-
-       
-  </script> 
+   
     </script>
 </body>
 </html>
@@ -1097,5 +1099,6 @@ btn.addEventListener("click",function(){
 
 </body>
 </html>
+
 
 
