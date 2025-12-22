@@ -845,7 +845,16 @@
     
   </form>-->
     
+     <form class="input">
+         
+    <input type="text" placeholder="name">
+    <button>submit</button>
+    <ul>
         
+    </ul>
+         
+     </form>
+         
     
   <script>
     var navlink =document.getElementById("navlink");
@@ -1059,7 +1068,21 @@ return true;
       var sqmeter = document.getElementById('sqmeter').value;
       var sqft = sqmeter / 0.092903; // 1 square meter = 10.7639 square feet
       document.getElementById('resultSqMeter').textContent = sqmeter + ' वर्गमिटर(Square meters) =' + sqft.toFixed(2) + ' वर्गफिट(Square feet)';
+
+       
     }-->
+
+
+let btn= document.querySelector("button");
+let input = document.querySelector("input");
+let list = document.querySelector("ul");
+
+btn.addEventListener("click",function(){
+    let inputValue = input.value;
+    list.insertAdjacentHTML("beforeend", `<li>${inputValue}</li>`);
+});
+
+       
   </script> 
     </script>
 </body>
@@ -1074,4 +1097,5 @@ return true;
 
 </body>
 </html>
+
 
