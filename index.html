@@ -691,9 +691,9 @@
     
      <form class="input">
          
-    <input type="text" placeholder="name">
-    <button>submit</button>
-    <ul>
+    <input type="text" placeholder="name" id="inp">
+    <button id="but">submit</button>
+    <ul id="uli">
         
     
         
@@ -747,9 +747,9 @@
        
   
    
-let btn= document.querySelector("button");
-let input = document.querySelector("input");
-let list = document.querySelector("ul");
+let btn= document.getElementById("but");
+let input = document.getElementById("inp");
+let list = document.getElementById("uli");
 
 btn.addEventListener("click",function(){
     let inputValue = input.value;
@@ -757,6 +757,7 @@ btn.addEventListener("click",function(){
 });
    
     </script>
+
 
 
 
