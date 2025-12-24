@@ -1,4 +1,4 @@
-function validate(){
+/*function validate(){
     let comments=document.getElementById('c');
     let name=document.getElementById('n');
 if(comments==""){
@@ -16,4 +16,5 @@ else{
 
 }
 }
- validate();
+ validate();*/
+
