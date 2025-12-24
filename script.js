@@ -18,3 +18,11 @@ else{
 }
  validate();*/
 
+let btn= document.getElementById("but");
+let input = document.getElementById("inp");
+let list = document.getElementById("uli");
+
+btn.addEventListener("click",function(){
+    let inputValue = input.value;
+    list.insertAdjacentHTML("beforeend", `<li>${inputValue}</li>`);
+});
